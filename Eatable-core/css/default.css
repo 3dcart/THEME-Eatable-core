@@ -2,6 +2,7 @@
 ** Bootstrap over-rides
 */
 /* font-family: 'Mulish', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
 html, body {
     height: 100%;
 }
@@ -16,7 +17,25 @@ body {
   footer {
     flex-shrink: 0;
 }
-
+#skip a{
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+#skip a:focus{
+    position:static;
+    width:auto;
+    height:auto;
+}
+.homeCarousel.flexslider .slides img{
+    width:100%;
+}
+.antiCls { 
+    visibility: hidden; 
+}
 body {
 	font-family: 'Mulish', sans-serif;
     color: #000;
@@ -540,8 +559,7 @@ ul.payment-icons li span:before {
 .social-icons {
 }
 .social-icons li a {
-    color: #df2828;
-    background-color: #801717;
+    color: #fff;
     width: 26px;
     height: 26px;
     line-height: 26px;
@@ -636,7 +654,7 @@ span.freeshipping {
     position: absolute;
     top: 0;
     left: 15px;
-    background-color: #d04b64;
+    background-color: #AD1A1A;
     color: #fff;
     font-size: 11px;
     text-transform: uppercase;
